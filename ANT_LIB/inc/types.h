@@ -120,7 +120,13 @@ typedef signed short                   SSHORT;              // Signed 2-byte int
 typedef unsigned short                 USHORT;              // Unsigned 2-byte int.
 
 typedef signed long                    SLONG;               // Signed 4-byte int.
+
+#ifdef DSI_TYPES_MACINTOSH
+#include <MacTypes.h>
+typedef UInt32 ULONG;
+#else
 typedef unsigned long                  ULONG;               // Unsigned 4-byte int.
+#endif
 
 #if !defined(_WinToMac_h_)
    typedef long                        LONG;

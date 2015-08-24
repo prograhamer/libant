@@ -467,7 +467,7 @@ IOKitError::Enum IOKitDevice::CheckDeviceSanity()
 usb_device_t** IOKitDevice::CreateDeviceInterface(const io_service_t& hService_)
 {
    io_cf_plugin_ref_t* plugInInterface = NULL;
-   long score;
+   SInt32 score;
    IOReturn result = IOCreatePlugInInterfaceForService(hService_, kIOUSBDeviceUserClientTypeID,
 					     kIOCFPlugInInterfaceID, &plugInInterface,
 					     &score);

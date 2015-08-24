@@ -19,8 +19,7 @@ All rights reserved.
 #define ANTFS_NETWORK                  ((UCHAR) 0)
 #define ANTFS_CHANNEL                  ((UCHAR) 0)
 
-#error "MUST TYPE ANT-FS NETWORK KEY HERE, OR SET TO ALL 0'S IF NOT USING ANT-FS" 
-#define NETWORK_KEY                    {0x__, 0x__, 0x__, 0x__, 0x__, 0x__, 0x__, 0x__}   // INSERT NETWORK KEY HERE !!!!
+#define NETWORK_KEY                    {0, 0, 0, 0, 0, 0, 0, 0}   // INSERT NETWORK KEY HERE !!!!
 
 // Default Link Configuration
 #define ANTFS_DEVICE_TYPE              ((UCHAR) 1)

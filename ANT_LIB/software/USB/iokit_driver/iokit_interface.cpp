@@ -152,7 +152,7 @@ IOKitError::Enum IOKitInterface::Claim(const IOKitDeviceHandle& dev_handle, int 
 
   //get an interface to the device's interface
   IOCFPlugInInterface** plugInInterface = NULL;
-  long score;
+  SInt32 score;
   kresult = IOCreatePlugInInterfaceForService(usbInterface, kIOUSBInterfaceUserClientTypeID,
 					       kIOCFPlugInInterfaceID, &plugInInterface, &score);
   if(kresult || !plugInInterface)
